@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'iconTextfile.dart';
+import 'containerFile.dart';
 
 class InputPage extends StatefulWidget {
 
