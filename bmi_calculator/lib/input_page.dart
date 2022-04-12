@@ -15,6 +15,21 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  Color maleColor = deactivecolor;
+  Color feMaleColor = deactivecolor;
+
+  void updatecolor(int gender)
+  {
+    if (gender == 1){
+      maleColor = activecolor;
+      feMaleColor = deactivecolor;
+    }
+    if (gender == 2){
+      maleColor = deactivecolor;
+      feMaleColor = activecolor;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,21 +41,37 @@ class _InputPageState extends State<InputPage> {
           Expanded(child: Row(
             children:<Widget> [
               Expanded(
-                child:  RepeatContainerCode(
-                  colors: Color(0xFF1D1E33),
-                  cardwidget: RepeatTextAndIconWidget(
-                    iconData: FontAwesomeIcons.male,
-                    label:'MALE',
+                child:  GestureDetector(
+                  onTap: ()
+                  {
+                    setState(() {
+                      updatecolor(1);
+                    });
+                  },
+                  child: RepeatContainerCode(
+                    colors: maleColor,
+                    cardwidget: RepeatTextAndIconWidget(
+                      iconData: FontAwesomeIcons.male,
+                      label:'MALE',
+                    ),
                   ),
                 ),
               ),
               Expanded(
-                child:  RepeatContainerCode(
-                  colors: Color(0xFF1D1E33),
-                cardwidget: RepeatTextAndIconWidget(
-                    iconData: FontAwesomeIcons.female,
-                    label:'FEMALE',
-                ),
+                child:  GestureDetector(
+                  onTap: ()
+                  {
+                    setState(() {
+                      updatecolor(2);
+                    });
+                  },
+                  child: RepeatContainerCode(
+                    colors: feMaleColor,
+                  cardwidget: RepeatTextAndIconWidget(
+                      iconData: FontAwesomeIcons.female,
+                      label:'FEMALE',
+                  ),
+                  ),
                 ),
               ),
 
