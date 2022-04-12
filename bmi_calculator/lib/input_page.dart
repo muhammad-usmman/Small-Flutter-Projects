@@ -48,7 +48,7 @@ class _InputPageState extends State<InputPage> {
 
 class RepeatContainerCode extends StatelessWidget {
    RepeatContainerCode({@required this.colors});
- final Color colors;
+ final Color? colors;
 
 
   @override
