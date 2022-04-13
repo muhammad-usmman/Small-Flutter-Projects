@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 
 class RepeatContainerCode extends StatelessWidget {
-  RepeatContainerCode({@required this.colors,this.cardwidget,this.onPressed});
+  RepeatContainerCode({this.colors,this.cardwidget,this.onPressed});
   final Color? colors;
   final Widget? cardwidget;
-  final Void callback onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
