@@ -9,6 +9,8 @@ const deactivecolor = Color(0xFF111328);
 enum Gender{
   male,
   female,
+  other,
+
 }
 
 class InputPage extends StatefulWidget {
@@ -19,20 +21,8 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Color maleColor = deactivecolor;
-  Color feMaleColor = deactivecolor;
+ Gender selectGender=Gender.other;
 
-  void updatecolor(Gender gender_type)
-  {
-    if (gender_type == Gender.male ){
-      maleColor = activecolor;
-      feMaleColor = deactivecolor;
-    }
-    if (gender_type == Gender.female){
-      maleColor = deactivecolor;
-      feMaleColor = activecolor;
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -49,11 +39,13 @@ class _InputPageState extends State<InputPage> {
                   onTap: ()
                   {
                     setState(() {
-                      updatecolor(Gender.male);
+                    selectGender=Gender.male;
                     });
                   },
                   child: RepeatContainerCode(
-                    colors: maleColor,
+                    colors: selectGender==Gender.male
+                        ? activecolor
+                        :deactivecolor,
                     cardwidget: RepeatTextAndIconWidget(
                       iconData: FontAwesomeIcons.male,
                       label:'MALE',
@@ -66,11 +58,11 @@ class _InputPageState extends State<InputPage> {
                   onTap: ()
                   {
                     setState(() {
-                      updatecolor(Gender.female);
+                      selectGender=Gender.female;
                     });
                   },
                   child: RepeatContainerCode(
-                    colors: feMaleColor,
+                    colors:  selectGender==Gender.female?activecolor:deactivecolor,
                   cardwidget: RepeatTextAndIconWidget(
                       iconData: FontAwesomeIcons.female,
                       label:'FEMALE',
