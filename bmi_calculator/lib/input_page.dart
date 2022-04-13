@@ -1,3 +1,6 @@
+import 'dart:html';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'iconTextfile.dart';
@@ -21,7 +24,8 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
  Gender selectGender=Gender.other;
-
+int sliderheight=180;
+int sliderWeight=60;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +36,8 @@ class _InputPageState extends State<InputPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children:<Widget> [
-          Expanded(child: Row(
+          Expanded(child:
+          Row(
             children:<Widget> [
               Expanded(
 
@@ -72,19 +77,70 @@ class _InputPageState extends State<InputPage> {
             ],
           ),
           ),
-          Expanded(child: RepeatContainerCode(
+          Expanded(child:
+          RepeatContainerCode(
             colors: Color(0xFF1D1E33),
             cardwidget: Column(
+              mainAxisAlignment:MainAxisAlignment.center,
               children: [
-                Text('HEIGHT',style:kLabelStyle),
+                Text('HEIGHT',
+                    style:kLabelStyle),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      sliderheight.toString(),
+                    style:kNumberstyle,
+                    ),
+                    Text(
+                      'cm',
+                      style: kLabelStyle,
+                    ),
+                  ],
+                ),
+               Slider(
+                 value: sliderheight.toDouble(),
+                 min: 120.0,
+                 max: 220.0,
+                 activeColor: Color(0xFFEB1555),
+                 inactiveColor: Color(0xFF8d8e98),
+                 onChanged:(double newValue){
+                  setState(() {
+                    sliderheight= newValue.round();
+                  });
+                 },
+               ),
               ],
             ),
            ),
              ),
-          Expanded(child: Row(
+          Expanded(child:
+          Row(
             children:<Widget> [
               Expanded(
-                child: RepeatContainerCode( colors: Color(0xFF1D1E33),),
+                child:
+                RepeatContainerCode(
+                  colors: Color(0xFF1D1E33),
+                cardwidget: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Weight',
+                      style: kLabelStyle,
+                    ),
+                    Text(
+                      sliderWeight.toString(),
+                      style: kNumberstyle,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+
+                      ],
+                    ),
+                  ],
+                ),
+                ),
               ),
               Expanded(
                 child: RepeatContainerCode(   colors: Color(0xFF1D1E33),),),
@@ -97,4 +153,5 @@ class _InputPageState extends State<InputPage> {
     );
   }
 }
+
 
