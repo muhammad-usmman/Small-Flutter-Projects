@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +26,7 @@ class _InputPageState extends State<InputPage> {
  Gender selectGender=Gender.other;
 int sliderheight=180;
 int sliderWeight=60;
-
+int sliderAge=20;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -135,7 +135,23 @@ int sliderWeight=60;
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-
+                        RoundIcon(
+                          iconData:FontAwesomeIcons.minus ,
+                          onPress:(){
+                           setState(() {
+                             sliderWeight--;
+                           });
+                          } ,
+                        ),
+                        SizedBox(width: 10.0,),
+                        RoundIcon(
+                          iconData:FontAwesomeIcons.plus ,
+                          onPress:(){
+                            setState(() {
+                              sliderWeight++;
+                            });
+                          } ,
+                        ),
                       ],
                     ),
                   ],
@@ -143,15 +159,82 @@ int sliderWeight=60;
                 ),
               ),
               Expanded(
-                child: RepeatContainerCode(   colors: Color(0xFF1D1E33),),),
+                child: RepeatContainerCode(
+                  colors: Color(0xFF1D1E33),
+
+                  cardwidget: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'AGE',
+                        style: kLabelStyle,
+                      ),
+                      Text(
+                        sliderAge.toString(),
+                        style: kNumberstyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          RoundIcon(
+                            iconData:FontAwesomeIcons.minus ,
+                            onPress:(){
+                              setState(() {
+                                sliderAge--;
+                              });
+                            } ,
+                          ),
+                          SizedBox(width: 10.0,),
+                          RoundIcon(
+                            iconData:FontAwesomeIcons.plus ,
+                            onPress:(){
+                              setState(() {
+                                sliderAge++;
+                              });
+                            } ,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
 
             ],
            ),
           ),
-        ],
+          Container(
+            color: Color(0xFFEB1555),
+            margin: EdgeInsets.only(top: 10.0),
+            width:  double.infinity,
+              height: 80.0,
+          )
+                  ],
       )
     );
   }
 }
 
 
+
+class RoundIcon extends StatelessWidget {
+  RoundIcon({required this.iconData,required this.onPress});
+  final IconData iconData;
+  final  VoidCallback onPress;
+
+
+  @override
+  Widget build(BuildContext context) {
+    return RawMaterialButton(
+      child: Icon(iconData),
+      onPressed: onPress,
+      elevation: 6.0,
+      constraints:  BoxConstraints.tightFor(
+        height: 56.0,
+        width: 56.0,
+      ),
+      shape: CircleBorder(),
+      fillColor: Color(0xFF4C4F5E) ,
+    );
+  }
+}
