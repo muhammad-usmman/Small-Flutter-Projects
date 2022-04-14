@@ -5,6 +5,7 @@ import 'iconTextfile.dart';
 import 'containerFile.dart';
 import 'constant.dart';
 import 'resultfile.dart';
+import 'package:bmi_calculator/CalculatorFile.dart';
 
 enum Gender{
   male,
@@ -202,7 +203,14 @@ int sliderAge=20;
 
           GestureDetector(
             onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultScreen()));
+              CalculatorBrain calc=CalculatorBrain(height: sliderheight, weight: sliderWeight);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context)=>ResultScreen(
+                  BmiResult: calc.calculateBMI(),
+                  resultText: calc.getResult(),
+                  interpretation: calc.getInterpretation(),
+
+                )));
             },
 
             child: Container(
