@@ -1,23 +1,18 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'iconTextfile.dart';
 import 'containerFile.dart';
 import 'constant.dart';
-
+import 'resultfile.dart';
 
 enum Gender{
   male,
   female,
   other,
-
 }
 
 class InputPage extends StatefulWidget {
-
-
   @override
   State<InputPage> createState() => _InputPageState();
 }
@@ -203,11 +198,25 @@ int sliderAge=20;
             ],
            ),
           ),
-          Container(
-            color: Color(0xFFEB1555),
-            margin: EdgeInsets.only(top: 10.0),
-            width:  double.infinity,
-              height: 80.0,
+
+
+          GestureDetector(
+            onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultScreen()));
+            },
+
+            child: Container(
+              child: Center(
+                child: Text(
+                  'Calculate',
+                  style: kLargeButtonStyle,
+                ),
+              ),
+              color: Color(0xFFEB1555),
+              margin: EdgeInsets.only(top: 10.0),
+              width:  double.infinity,
+                height: 80.0,
+            ),
           )
                   ],
       )
