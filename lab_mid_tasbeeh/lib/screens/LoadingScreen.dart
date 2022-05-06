@@ -3,13 +3,6 @@ import 'dart:async';
 
 import 'package:lab_mid_tasbeeh/screens/homepage.dart';
 
-
-
-
-
-
-
-
 class LoadingScreen extends StatefulWidget {
   @override
   _LoadingScreenState createState() => _LoadingScreenState();

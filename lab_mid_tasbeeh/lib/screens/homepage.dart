@@ -1,31 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lab_mid_tasbeeh/utilities/constants.dart';
+import 'package:lab_mid_tasbeeh/screens/Create_Tasbeeh.dart';
 
-// class Homepage extends StatefulWidget {
-//   @override
-//   _HomepageState createState() => _HomepageState();
-//
-// }
-//
-// class _HomepageState extends State<Homepage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Container(
-//         decoration: BoxDecoration(
-//           image: DecorationImage(
-//             image: AssetImage('images/backgroundimage.jpeg'),
-//             fit: BoxFit.cover,
-//             colorFilter: ColorFilter.mode(
-//                 Colors.white.withOpacity(0.8), BlendMode.dstATop),
-//           ),
-//         ),
-//         constraints: BoxConstraints.expand(),
-//
-//       ),
-//     );
-//   }
-// }
 
 
 class home extends StatefulWidget {
@@ -43,17 +18,68 @@ class _homeState extends State<home> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body:Container(
+        body: Container(
           constraints: BoxConstraints.expand(),
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image:AssetImage('images/backgroundimage.jpeg'),
                 fit: BoxFit.cover),
           ),
-          child: const Text(
-            'Image in fullscreen',
-            style: TextStyle(fontSize: 34, color: Colors.red),
+          child: Column( children:<Widget> [
+              GestureDetector(
+            onTap: (){
+
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>CreateTsbh(
+
+
+                  )));
+            },
+
+               child: Container(
+              child: Center(
+                child: Text(
+                  'Create Tasbih',
+                  // style: kLargeButtonStyle,
+                ),
+              ),
+              color: Color(0xFF8d8e98),
+              margin: EdgeInsets.only(top: 10.0),
+              width:  120.0,
+              height: 60.0,
+            ),
           ),
+            GestureDetector(
+              onTap: (){
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+
+
+                    )));
+              },
+
+              child: Container(
+                child: Center(
+                  child: Text(
+                    'Counter',
+                    // style: kLargeButtonStyle,
+                  ),
+                ),
+                color: Colors.teal,
+
+                margin: EdgeInsets.only(top: 10.0),
+                width:  120.0,
+                height: 60.0,
+              ),
+            )
+          ]
+
+
+          ),
+
+
+
         ),
         drawer: Drawer( child: ListView(
 
@@ -66,49 +92,61 @@ class _homeState extends State<home> {
               child: Text('tasbeeh App'),
 
             ),
-            FlatButton(
+            ListTile(
+              title: Text('Home'),
+              leading: Icon(Icons.home),
+              onTap: (){
 
-              onPressed:(){
-                Navigator.push(context,MaterialPageRoute(builder: (context) =>home()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+
+                    )));
               },
-              child: Text("HOME",style: TextStyle(color: Colors.red)),
             ),
 
 
-            FlatButton(
 
-              onPressed:(){
 
+            ListTile(
+              title: Text('Queries'),
+              leading: Icon(Icons.home),
+              onTap: (){
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+
+                    )));
               },
-              child: Text("QUERIES",style: TextStyle(color: Colors.teal)),
             ),
+            ListTile(
+              title: Text('About us'),
+              leading: Icon(Icons.backup),
+              onTap: (){
 
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>CreateTsbh(
 
-            FlatButton(
-
-              onPressed:(){
-
+                    )));
               },
-
-              child:
-
-              Text("About us",style: TextStyle(color: Colors.teal)),
             ),
           ],
-        ),
-        ),
+        ),),
 
-        backgroundColor: Colors.brown
 
-        // body: SafeArea(
-        //   child: Padding(
-        //     padding: EdgeInsets.symmetric(horizontal: 10.0),
-        //
-        //   ),
-        // ),
+
+
       ),
 
     );
 
   }
 }
+
+
+// onTap: (){
+//
+//   Navigator.push(context,
+//       MaterialPageRoute(builder: (context)=>CreateTsbh(
+//
+//       )));
+// },
