@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:lab_mid_tasbeeh/screens/homepage.dart';
+
 
 
 
@@ -20,7 +22,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) =>
-                SecondScreen()
+                home()
             )
         )
     );
@@ -28,19 +30,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.white,
-        child:FlutterLogo(size:MediaQuery.of(context).size.height)
+        color: Colors.black,
+        child:FlutterLogo(size:MediaQuery.of(context).size.height),
+
     );
   }
 }
-class SecondScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title:Text("Tasbeeh Counter")),
-      body: Center(
-          child:Text("Home page",textScaleFactor: 2,)
-      ),
-    );
-  }
-}
+
+
