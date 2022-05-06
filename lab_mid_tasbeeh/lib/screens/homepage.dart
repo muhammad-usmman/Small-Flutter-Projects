@@ -71,7 +71,7 @@ class _homeState extends State<home> {
               onPressed:(){
                 Navigator.push(context,MaterialPageRoute(builder: (context) =>home()));
               },
-              child: Text("HOME",style: TextStyle(color: Colors.teal)),
+              child: Text("HOME",style: TextStyle(color: Colors.red)),
             ),
 
 
@@ -98,7 +98,7 @@ class _homeState extends State<home> {
         ),
         ),
 
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.brown
 
         // body: SafeArea(
         //   child: Padding(
