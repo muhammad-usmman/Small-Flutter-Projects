@@ -15,7 +15,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) =>
-                home()
+                Home()
             )
         )
     );

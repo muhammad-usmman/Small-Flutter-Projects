@@ -1,16 +1,21 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lab_mid_tasbeeh/About_us.dart';
+import 'package:lab_mid_tasbeeh/screens/Counter.dart';
 import 'package:lab_mid_tasbeeh/screens/Create_Tasbeeh.dart';
+import 'package:lab_mid_tasbeeh/screens/saved_tasbih.dart';
+import 'package:lab_mid_tasbeeh/utilities/constants.dart';
 
 
 
-class home extends StatefulWidget {
-  const home({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
-  State<home> createState() => _homeState();
+  State<Home> createState() => _HomeState();
 }
 
-class _homeState extends State<home> {
+class _HomeState extends State<Home> {
   @override
 
 
@@ -26,6 +31,8 @@ class _homeState extends State<home> {
                 fit: BoxFit.cover),
           ),
           child: Column( children:<Widget> [
+
+            SizedBox(height: 50.0,),
               GestureDetector(
             onTap: (){
 
@@ -40,15 +47,16 @@ class _homeState extends State<home> {
               child: Center(
                 child: Text(
                   'Create Tasbih',
-                  // style: kLargeButtonStyle,
+                  style: kLargeButtonStyle,
                 ),
               ),
               color: Color(0xFF8d8e98),
               margin: EdgeInsets.only(top: 10.0),
-              width:  120.0,
+              width:  220.0,
               height: 60.0,
             ),
           ),
+            SizedBox(height: 30.0,),
             GestureDetector(
               onTap: (){
 
@@ -63,13 +71,38 @@ class _homeState extends State<home> {
                 child: Center(
                   child: Text(
                     'Counter',
-                    // style: kLargeButtonStyle,
+                    style: kLargeButtonStyle,
                   ),
                 ),
                 color: Colors.teal,
 
                 margin: EdgeInsets.only(top: 10.0),
-                width:  120.0,
+                width:  220.0,
+                height: 60.0,
+              ),
+            ),
+            SizedBox(height: 30.0,),
+            GestureDetector(
+              onTap: (){
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>Saved(
+
+
+                    )));
+              },
+
+              child: Container(
+                child: Center(
+                  child: Text(
+                    'View Saved',
+                    style: kLargeButtonStyle,
+                  ),
+                ),
+                color: Colors.white,
+
+                margin: EdgeInsets.only(top: 10.0),
+                width:  220.0,
                 height: 60.0,
               ),
             )
@@ -98,7 +131,7 @@ class _homeState extends State<home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+                    MaterialPageRoute(builder: (context)=>Home(
 
                     )));
               },
@@ -113,7 +146,7 @@ class _homeState extends State<home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+                    MaterialPageRoute(builder: (context)=>About(
 
                     )));
               },
@@ -124,7 +157,7 @@ class _homeState extends State<home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+                    MaterialPageRoute(builder: (context)=>About(
 
                     )));
               },
