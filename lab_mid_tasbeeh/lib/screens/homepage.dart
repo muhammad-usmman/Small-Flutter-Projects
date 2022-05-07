@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>Counter(
+                    MaterialPageRoute(builder: (context)=>home(
 
 
                     )));
