@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141652663947",
+    "project_id": "tasbih-app-c1a21",
+    "storage_bucket": "tasbih-app-c1a21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141652663947:android:e5d27088b5dd5d1ebf3e8e",
+        "android_client_info": {
+          "package_name": "com.example.lab_mid_tasbeeh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141652663947-2sbts28u96h79obq44e7dlis7kqqtgqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjzRN6DEzBYs2VLumeXdJp7M9m31ObMmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141652663947-2sbts28u96h79obq44e7dlis7kqqtgqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
