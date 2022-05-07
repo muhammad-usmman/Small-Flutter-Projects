@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lab_mid_tasbeeh/About_us.dart';
+import 'package:lab_mid_tasbeeh/contact.dart';
 import 'package:lab_mid_tasbeeh/screens/Counter.dart';
 import 'package:lab_mid_tasbeeh/screens/Create_Tasbeeh.dart';
 import 'package:lab_mid_tasbeeh/screens/saved_tasbih.dart';
@@ -9,6 +10,7 @@ import 'package:lab_mid_tasbeeh/utilities/constants.dart';
 
 
 class Home extends StatefulWidget {
+
   const Home({Key? key}) : super(key: key);
 
   @override
@@ -157,7 +159,7 @@ class _HomeState extends State<Home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>About(
+                    MaterialPageRoute(builder: (context)=>Contact(
 
                     )));
               },
