@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
               onTap: (){
 
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=>CreateTsbh(
+                    MaterialPageRoute(builder: (context)=>Counter(
 
 
                     )));
@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
               decoration: BoxDecoration(
                 color: Colors.teal,
               ),
-              child: Text('tasbeeh App'),
+              child: Text('Tasbih App'),
 
             ),
             ListTile(
@@ -142,7 +142,18 @@ class _HomeState extends State<Home> {
 
             ListTile(
               title: Text('Queries'),
-              leading: Icon(Icons.home),
+              leading: Icon(Icons.question_mark),
+              onTap: (){
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>About(
+
+                    )));
+              },
+            ),
+            ListTile(
+              title: Text('Contact Us'),
+              leading: Icon(Icons.call),
               onTap: (){
 
                 Navigator.push(context,
