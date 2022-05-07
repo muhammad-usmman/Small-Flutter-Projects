@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lab_mid_tasbeeh/About_us.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:lab_mid_tasbeeh/screens/homepage.dart';
 
+import 'package:lab_mid_tasbeeh/screens/homepage.dart';
+import 'package:flutter/cupertino.dart';
 class Contact extends StatelessWidget {
   const Contact({Key? key}) : super(key: key);
 
@@ -26,24 +26,14 @@ class Contact extends StatelessWidget {
                Icon(Icons.call),
                SizedBox(width: 20.0,),
                Text('0302-3195454'),
-
-
-
              ],
-
-
-
              ),
              SizedBox(height: 50.0,),
              Row(
                children: [
-
                  Icon(Icons.mail),
                  SizedBox(width: 20.0,),
                  Text('muhammadusman9058@gmail.com')
-
-
-
                ],
              ),
            ],
