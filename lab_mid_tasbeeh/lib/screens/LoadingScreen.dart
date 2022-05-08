@@ -24,9 +24,15 @@ class _LoadingScreenState extends State<LoadingScreen> {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.black,
-        child:FlutterLogo(size:MediaQuery.of(context).size.height),
+        child:Container(
+        constraints: BoxConstraints.expand(),
+    decoration: const BoxDecoration(
+    image: DecorationImage(
+    image:AssetImage('images/backgroundimage.jpeg'),
+    fit: BoxFit.cover),
+    ),
 
-    );
+    ));
   }
 }
 

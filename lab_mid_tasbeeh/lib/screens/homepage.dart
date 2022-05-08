@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
             onTap: (){
 
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context)=>CreateTsbh(
+                  MaterialPageRoute(builder: (context)=>Create_tsbh(
 
 
                   )));
@@ -48,11 +48,11 @@ class _HomeState extends State<Home> {
                child: Container(
               child: Center(
                 child: Text(
-                  'Create Tasbih',
+                  'Addd Tasbih',
                   style: kLargeButtonStyle,
                 ),
               ),
-              color: Color(0xFF8d8e98),
+                 color: Colors.white54,
               margin: EdgeInsets.only(top: 10.0),
               width:  220.0,
               height: 60.0,
@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                     style: kLargeButtonStyle,
                   ),
                 ),
-                color: Colors.teal,
+                color: Colors.white54,
 
                 margin: EdgeInsets.only(top: 10.0),
                 width:  220.0,
@@ -97,11 +97,11 @@ class _HomeState extends State<Home> {
               child: Container(
                 child: Center(
                   child: Text(
-                    'View Saved',
+                    'Saved Tasbih',
                     style: kLargeButtonStyle,
                   ),
                 ),
-                color: Colors.white,
+                color: Colors.white54,
 
                 margin: EdgeInsets.only(top: 10.0),
                 width:  220.0,
