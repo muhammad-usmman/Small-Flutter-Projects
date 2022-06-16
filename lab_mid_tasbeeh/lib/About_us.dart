@@ -54,8 +54,8 @@ class About extends StatelessWidget {
 
 
         ),
-        drawer: Drawer( child: ListView(
-
+        drawer: Drawer( child:
+        ListView(
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
@@ -110,7 +110,8 @@ class About extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context)=>About(
 
-                    )));
+                    ))
+                );
               },
             ),
           ],
