@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:travelling_app/login/src/Widget/singinContainer.dart';
-import 'package:travelling_app/login/src/signup.dart';
-import 'package:travelling_app/screens/Home_Page.dart';
+import 'package:fee_management_system/Teacher//login/src/Widget/singinContainer.dart';
+import 'package:fee_management_system/Teacher//login/src/signup.dart';
+import 'package:fee_management_system/Home_Page.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -76,7 +76,7 @@ class _SignInPageState extends State<SignInPage> {
       child: InkWell(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Home()));
+              context, MaterialPageRoute(builder: (context) => Home_Page()));
         },
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [

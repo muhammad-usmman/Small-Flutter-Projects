@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:travelling_app/login/src/Widget/siginClipper.dart';
+import 'package:fee_management_system/Manager/login/src/Widget/siginClipper.dart';
 import 'package:proste_bezier_curve/proste_bezier_curve.dart';
 
 class SigninContainer extends StatelessWidget {

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:travelling_app/login/src/Widget/signup_clipper.dart';
+import 'package:fee_management_system/Manager/login/src/Widget/signup_clipper.dart';
 
 class SignUpContainer extends StatelessWidget {
   const SignUpContainer({Key? key}) : super(key: key);
