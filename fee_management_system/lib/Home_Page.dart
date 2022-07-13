@@ -26,56 +26,96 @@ class _Home_PageState extends State<Home_Page> {
           child:Column(
             children: [
               kpd20,
-              Container(
-                height: 250,
-                width: 350,
-                // color: Colors.red,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.red,
+              InkWell(
+                child:
+                Container(
+                  alignment: Alignment.bottomLeft,
+                  // child: const Text('Cruise',style: kIText,),
+                  height: 50.0,
+                  width: 50.0,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image:AssetImage('images/icons/cruise.jpg',),
                     ),
-                    borderRadius: BorderRadius.all(Radius.circular(20))
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    color: Colors.redAccent,
+                  ),
                 ),
+                // onTap: (){
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context)=>cruise_Book())
+                //          }
               ),
               sh20,
             kpd20,
-            Container(
-              height: 150,
-              width: 150,
-              // color: Colors.red,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.red,
+              InkWell(
+                child:
+                Container(
+                  alignment: Alignment.bottomLeft,
+                  // child: const Text('Cruise',style: kIText,),
+                  height: 50.0,
+                  width: 50.0,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image:AssetImage('images/icons/cruise.jpg',),
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    color: Colors.redAccent,
                   ),
-                  borderRadius: BorderRadius.all(Radius.circular(20))
+                ),
+                // onTap: (){
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context)=>cruise_Book())
+                //          }
               ),
-            ),
               // sw20,
               sh20,
               // kpd40,
-              Container(
-                height: 150,
-                width: 150,
-                // color: Colors.red,
-                decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.red,
+              InkWell(
+                child:
+                Container(
+                  alignment: Alignment.bottomLeft,
+                  // child: const Text('Cruise',style: kIText,),
+                  height: 50.0,
+                  width: 50.0,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image:AssetImage('images/icons/cruise.jpg',),
                     ),
-                    borderRadius: BorderRadius.all(Radius.circular(20))
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    color: Colors.redAccent,
+                  ),
                 ),
+                // onTap: (){
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context)=>cruise_Book())
+                //          }
               ),
               // sw20,
               sh20,
-              Container(
-
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                  border:  Border.all(
-                    color: Colors.red,
+              InkWell(
+                child:
+                Container(
+                  alignment: Alignment.bottomLeft,
+                  // child: const Text('Cruise',style: kIText,),
+                  height: 50.0,
+                  width: 50.0,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image:AssetImage('images/icons/cruise.jpg',),
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    color: Colors.redAccent,
                   ),
-                  borderRadius:  BorderRadius.all(Radius.circular(20))
                 ),
+                // onTap: (){
+                //   Navigator.push(context,
+                //       MaterialPageRoute(builder: (context)=>cruise_Book())
+                //          }
               ),
 
 
