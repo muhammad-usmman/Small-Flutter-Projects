@@ -17,3 +17,10 @@ const  sw20=SizedBox(
 const  sh20=SizedBox(
   height: 20.0,
 );
+const sizedb20=SizedBox(
+  height: 20.0,
+);
+
+const sizedb10=SizedBox(
+  height: 20.0,
+);

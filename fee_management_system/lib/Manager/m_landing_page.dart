@@ -129,6 +129,27 @@ class _s_landingpageState extends State<s_landingpage> {
                     //       MaterialPageRoute(builder: (context)=>cruise_Book())
                     //          }
                   ),
+                  InkWell(
+                    child:
+                    Container(
+                      alignment: Alignment.bottomLeft,
+                      child: const Text('Student Informaton',),
+                      height: 50.0,
+                      width: 50.0,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image:AssetImage('images/icons/cruise.jpg',),
+                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                        color: Colors.redAccent,
+                      ),
+                    ),
+                    // onTap: (){
+                    //   Navigator.push(context,
+                    //       MaterialPageRoute(builder: (context)=>cruise_Book())
+                    //          }
+                  ),
                 ],
               ),
             ),

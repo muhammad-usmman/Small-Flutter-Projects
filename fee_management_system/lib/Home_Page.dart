@@ -31,8 +31,8 @@ class _Home_PageState extends State<Home_Page> {
                 Container(
                   alignment: Alignment.bottomLeft,
                   // child: const Text('Cruise',style: kIText,),
-                  height: 50.0,
-                  width: 50.0,
+                  height: 200,
+                  width: 400.0,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
@@ -54,8 +54,8 @@ class _Home_PageState extends State<Home_Page> {
                 Container(
                   alignment: Alignment.bottomLeft,
                   // child: const Text('Cruise',style: kIText,),
-                  height: 50.0,
-                  width: 50.0,
+                  height: 150.0,
+                  width: 150.0,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
@@ -78,8 +78,8 @@ class _Home_PageState extends State<Home_Page> {
                 Container(
                   alignment: Alignment.bottomLeft,
                   // child: const Text('Cruise',style: kIText,),
-                  height: 50.0,
-                  width: 50.0,
+                  height: 150.0,
+                  width: 150.0,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
@@ -101,8 +101,8 @@ class _Home_PageState extends State<Home_Page> {
                 Container(
                   alignment: Alignment.bottomLeft,
                   // child: const Text('Cruise',style: kIText,),
-                  height: 50.0,
-                  width: 50.0,
+                  height: 150.0,
+                  width: 150.0,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
