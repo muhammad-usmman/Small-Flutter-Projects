@@ -77,6 +77,10 @@ flutter:
    - images/student-studying-at-home-free-vector.jpg
    - images/teachers.png
    - images/teacherslogo.jpg
+   - images/subject.jpeg
+   - images/annual-fee.jpeg
+   - images/feesicon.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

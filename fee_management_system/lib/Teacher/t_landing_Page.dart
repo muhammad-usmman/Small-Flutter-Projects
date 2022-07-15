@@ -19,7 +19,7 @@ class _t_landingpageState extends State<t_landingpage> {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-            height: 1000.0,
+            height:800.0,
             width: 500.0,
             child: Center(
               child: Column(
@@ -31,13 +31,16 @@ class _t_landingpageState extends State<t_landingpage> {
                       height: 200,
 
                       width: 400.0,
-                      decoration: const BoxDecoration(
+                      decoration:  BoxDecoration(
+                        border: Border.all(color: Colors.black),
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image:AssetImage('images/teacherslogo.jpg',),
+
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(8.0)),
                         color: Colors.redAccent,
+
                       ),
                     ),
 
