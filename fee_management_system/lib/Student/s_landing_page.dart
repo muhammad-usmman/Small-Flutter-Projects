@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:fee_management_system/contsnts/constant.dart';
 
 class s_landingpage extends StatefulWidget {
   const s_landingpage({Key? key}) : super(key: key);
@@ -19,25 +19,52 @@ class _s_landingpageState extends State<s_landingpage> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          height: 1000.0,
+          height: 800.0,
           width: 500.0,
           child: Center(
             child: Column(
               children: [
+                kpd20,
+                InkWell(
+                    child:
+                    Container(
+                      alignment: Alignment.bottomLeft,
+                      // child: const Text('Cruise',),
+                      height: 200,
+                      width: 400.0,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image:AssetImage('images/student-studying-at-home-free-vector.jpg',),
+                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                        color: Colors.redAccent,
+                      ),
+                    ),
+
+                    // onTap: (){
+                    //   Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context)=>S_SignInPage()
+                    //     ),
+                    //   );
+                    // }
+                ),
+                sh20,
+                kpd20,
                 InkWell(
                   child:
                   Container(
-                    alignment: Alignment.bottomLeft,
-                    child: const Text('View Teachers',),
-                    height: 50.0,
-                    width: 50.0,
+                    alignment: Alignment.bottomRight,
+                    child: const Text(' Teachers',),
+                    height: 150.0,
+                    width: 150.0,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image:AssetImage('images/icons/cruise.jpg',),
+                        image:AssetImage('images/teachers.png',),
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                      color: Colors.redAccent,
+                      // color: Colors.redAccent,
                     ),
                   ),
                   // onTap: (){
@@ -45,20 +72,23 @@ class _s_landingpageState extends State<s_landingpage> {
                   //       MaterialPageRoute(builder: (context)=>cruise_Book())
                   //          }
                 ),
+                // Text('Teacher Info'),
+                sh20,
+                kpd20,
                 InkWell(
                   child:
                   Container(
                     alignment: Alignment.bottomLeft,
-                    child: const Text('Fee Information',),
-                    height: 50.0,
-                    width: 50.0,
+                    // child: const Text('Fee Information',),
+                    height: 150.0,
+                    width: 150.0,
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.cover,
-                        image:AssetImage('images/icons/cruise.jpg',),
+                        image:AssetImage('images/annual-fee.jpg',),
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                      color: Colors.redAccent,
+                      // color: Colors.redAccent,
                     ),
                   ),
                   // onTap: (){

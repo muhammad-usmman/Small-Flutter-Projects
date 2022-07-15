@@ -1,7 +1,7 @@
+import 'package:fee_management_system/Teacher/t_landing_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:fee_management_system/Teacher//login/src/Widget/singinContainer.dart';
 import 'package:fee_management_system/Teacher//login/src/signup.dart';
-import 'package:fee_management_system/Home_Page.dart';
 
 class t_SignInPage extends StatefulWidget {
   const t_SignInPage({Key? key}) : super(key: key);
@@ -76,7 +76,7 @@ class _t_SignInPageState extends State<t_SignInPage> {
       child: InkWell(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Home_Page()));
+              context, MaterialPageRoute(builder: (context) => t_landingpage()));
         },
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [

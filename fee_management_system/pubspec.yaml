@@ -69,12 +69,14 @@ flutter:
    - images/Teacherlogin.png
    - images/adminlogin.jfif
    - images/annual-fee.jpg
-   - images/class-icon-png-12.jpg
+   - images/classes.png
    - images/comsats.jpg
    - images/1.jpg
-   - images/adminlogin.jfif
    - images/student-information.png
-   - images/Teacherlogin.png
+   - images/Teacher-Info-Icon.jpg
+   - images/student-studying-at-home-free-vector.jpg
+   - images/teachers.png
+   - images/teacherslogo.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
