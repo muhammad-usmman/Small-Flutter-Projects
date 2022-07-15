@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'contsnts/constant.dart';
+import 'package:fee_management_system/Student/login/src/signin.dart';
+import 'package:fee_management_system/Teacher/login/src/signin.dart';
+import 'package:fee_management_system/Manager/login/src/signin.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({Key? key}) : super(key: key);
@@ -18,7 +21,7 @@ class _Home_PageState extends State<Home_Page> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          color: Colors.grey,
+
 
           height: 1000.0,
           width: 500.0,
@@ -36,16 +39,18 @@ class _Home_PageState extends State<Home_Page> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image:AssetImage('images/icons/cruise.jpg',),
+                      image:AssetImage('images/1.jpg',),
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
                     color: Colors.redAccent,
                   ),
                 ),
-                // onTap: (){
-                //   Navigator.push(context,
-                //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                //          }
+                  onTap: (){
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>S_SignInPage()
+                      ),
+                    );
+                  }
               ),
               sh20,
             kpd20,
@@ -59,16 +64,20 @@ class _Home_PageState extends State<Home_Page> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image:AssetImage('images/icons/cruise.jpg',),
+                      image:AssetImage('images/studentlogin.png',),
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    color: Colors.redAccent,
+                    // color: Colors.redAccent,
                   ),
                 ),
-                // onTap: (){
-                //   Navigator.push(context,
-                //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                //          }
+                onTap: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>S_SignInPage()
+                    ),
+                  );
+                }
+
+
               ),
               // sw20,
               sh20,
@@ -83,16 +92,18 @@ class _Home_PageState extends State<Home_Page> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image:AssetImage('images/icons/cruise.jpg',),
+                      image:AssetImage('images/Teacherlogin.png',),
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    color: Colors.redAccent,
+                    // color: Colors.redAccent,
                   ),
                 ),
-                // onTap: (){
-                //   Navigator.push(context,
-                //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                //          }
+                  onTap: (){
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>t_SignInPage()
+                      ),
+                    );
+                  }
               ),
               // sw20,
               sh20,
@@ -106,16 +117,18 @@ class _Home_PageState extends State<Home_Page> {
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image:AssetImage('images/icons/cruise.jpg',),
+                      image:AssetImage('images/adminlogin.jfif',),
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    color: Colors.redAccent,
+                    // color: Colors.redAccent,
                   ),
                 ),
-                // onTap: (){
-                //   Navigator.push(context,
-                //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                //          }
+                  onTap: (){
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context)=>m_SignInPage()
+                      ),
+                    );
+                  }
               ),
 
 

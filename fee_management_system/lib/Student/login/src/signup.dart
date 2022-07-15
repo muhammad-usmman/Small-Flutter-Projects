@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:fee_management_system/Student/login/src/Widget/signupContainer.dart';
 import 'package:fee_management_system/Student/login/src/signin.dart';
 
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+class S_SignUpPage extends StatefulWidget {
+  const S_SignUpPage({Key? key}) : super(key: key);
 
   @override
-  _SignUpPageState createState() => _SignUpPageState();
+  _S_SignUpPageState createState() => _S_SignUpPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _S_SignUpPageState extends State<S_SignUpPage> {
   Widget _backButton() {
     return InkWell(
       onTap: () {
@@ -139,7 +139,7 @@ class _SignUpPageState extends State<SignUpPage> {
       alignment: Alignment.bottomLeft,
       child: InkWell(
         onTap: () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => SignInPage())),
+            context, MaterialPageRoute(builder: (context) => S_SignInPage())),
         child: Text(
           'Login',
           style: TextStyle(

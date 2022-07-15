@@ -40,7 +40,7 @@ class SigninContainer extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 35,
+                      fontSize: 30,
                       fontWeight: FontWeight.w400,
                       // height: 5.5
                     )),

@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fee_management_system/contsnts/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -281,26 +281,26 @@ class _Camp_BookState extends State<Camp_Book> {
                 ElevatedButton(
                     onPressed: () {
 
-                      if(formkey.currentState!.validate()){
-                        // final snackBar = SnackBar(
-                        //   content: Text('Class booked successfully.'),
-                        //   behavior: SnackBarBehavior.floating,
-                        //   shape: RoundedRectangleBorder(
-                        //       borderRadius: BorderRadius.circular(10)
-                        //   ),
-                        // );
-                        // _scaffoldKey.currentState!.showSnackBar(snackBar);
-                        FirebaseFirestore.instance.collection("Camp_Booking").add({
-                          'Name':'${namecontroller.text}',
-                          'CNIC':'${cniccontrller.text}',
-                          'E-mail id':'${mailcontroller.text}',
-                          'Contact':'${phonecontroller.text}',
-                          'Address':'${addresscontroller.text}',
-                          'Age':'${agecontroller.text}'
-                        }
-                        );
-                        Navigator.pop(context);
-                      }
+                      // if(formkey.currentState!.validate()){
+                      //   // final snackBar = SnackBar(
+                      //   //   content: Text('Class booked successfully.'),
+                      //   //   behavior: SnackBarBehavior.floating,
+                      //   //   shape: RoundedRectangleBorder(
+                      //   //       borderRadius: BorderRadius.circular(10)
+                      //   //   ),
+                      //   // );
+                      //   // _scaffoldKey.currentState!.showSnackBar(snackBar);
+                      //   FirebaseFirestore.instance.collection("Camp_Booking").add({
+                      //     'Name':'${namecontroller.text}',
+                      //     'CNIC':'${cniccontrller.text}',
+                      //     'E-mail id':'${mailcontroller.text}',
+                      //     'Contact':'${phonecontroller.text}',
+                      //     'Address':'${addresscontroller.text}',
+                      //     'Age':'${agecontroller.text}'
+                      //   }
+                      //   );
+                      //   Navigator.pop(context);
+                      // }
                       // _namecontroller.clear();
                       // cnic.clear();
                       // mail.clear();

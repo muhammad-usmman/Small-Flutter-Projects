@@ -1,16 +1,17 @@
+import 'package:fee_management_system/Student/s_landing_page.dart';
 import 'package:flutter/material.dart';
 import 'package:fee_management_system/Student/login/src/Widget/singinContainer.dart';
 import 'package:fee_management_system/Student/login/src/signup.dart';
 import 'package:fee_management_system/Home_Page.dart';
 
-class SignInPage extends StatefulWidget {
-  const SignInPage({Key? key}) : super(key: key);
+class S_SignInPage extends StatefulWidget {
+  const S_SignInPage({Key? key}) : super(key: key);
 
   @override
-  _SignInPageState createState() => _SignInPageState();
+  _S_SignInPageState createState() => _S_SignInPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _S_SignInPageState extends State<S_SignInPage> {
   Widget _backButton() {
     return InkWell(
       onTap: () {
@@ -76,7 +77,7 @@ class _SignInPageState extends State<SignInPage> {
       child: InkWell(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Home_Page()));
+              context, MaterialPageRoute(builder: (context) => s_landingpage()));
         },
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
@@ -112,7 +113,7 @@ class _SignInPageState extends State<SignInPage> {
         children: <Widget>[
           InkWell(
             onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => SignUpPage())),
+                context, MaterialPageRoute(builder: (context) => S_SignUpPage())),
             child: Text(
               'Register',
               style: TextStyle(

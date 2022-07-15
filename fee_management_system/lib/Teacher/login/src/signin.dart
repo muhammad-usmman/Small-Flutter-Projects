@@ -3,14 +3,14 @@ import 'package:fee_management_system/Teacher//login/src/Widget/singinContainer.
 import 'package:fee_management_system/Teacher//login/src/signup.dart';
 import 'package:fee_management_system/Home_Page.dart';
 
-class SignInPage extends StatefulWidget {
-  const SignInPage({Key? key}) : super(key: key);
+class t_SignInPage extends StatefulWidget {
+  const t_SignInPage({Key? key}) : super(key: key);
 
   @override
-  _SignInPageState createState() => _SignInPageState();
+  _t_SignInPageState createState() => _t_SignInPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _t_SignInPageState extends State<t_SignInPage> {
   Widget _backButton() {
     return InkWell(
       onTap: () {
@@ -112,7 +112,7 @@ class _SignInPageState extends State<SignInPage> {
         children: <Widget>[
           InkWell(
             onTap: () => Navigator.push(
-                context, MaterialPageRoute(builder: (context) => SignUpPage())),
+                context, MaterialPageRoute(builder: (context) => t_SignUpPage())),
             child: Text(
               'Register',
               style: TextStyle(

@@ -37,9 +37,9 @@ dependencies:
   carousel_slider: ^4.0.0
   proste_bezier_curve: ^2.0.2
   dropdown_button2: ^1.6.2
-  firebase_database: ^9.0.19
-  firebase_core: ^1.19.2
-  cloud_firestore: ^3.3.0
+#  firebase_database: ^9.0.19
+#  firebase_core: ^1.19.2
+#  cloud_firestore: ^3.3.0
 
 dev_dependencies:
   flutter_test:
@@ -64,9 +64,17 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+   - images/studentlogin.png
+   - images/Teacherlogin.png
+   - images/adminlogin.jfif
+   - images/annual-fee.jpg
+   - images/class-icon-png-12.jpg
+   - images/comsats.jpg
+   - images/1.jpg
+   - images/adminlogin.jfif
+   - images/student-information.png
+   - images/Teacherlogin.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

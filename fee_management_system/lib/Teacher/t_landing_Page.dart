@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 
-class s_landingpage extends StatefulWidget {
-  const s_landingpage({Key? key}) : super(key: key);
+class t_landingpage extends StatefulWidget {
+  const t_landingpage({Key? key}) : super(key: key);
 
   @override
-  State<s_landingpage> createState() => _s_landingpageState();
+  State<t_landingpage> createState() => _t_landingpageState();
 }
 
-class _s_landingpageState extends State<s_landingpage> {
+class _t_landingpageState extends State<t_landingpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,10 +34,10 @@ class _s_landingpageState extends State<s_landingpage> {
                       decoration: const BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image:AssetImage('images/icons/cruise.jpg',),
+                          image:AssetImage('images/class-icon-png-12.jpg',),
                         ),
                         borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                        color: Colors.redAccent,
+                        // color: Colors.redAccent,
                       ),
                     ),
                     // onTap: (){
