@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751552288129",
+    "project_id": "travel-and-tourism-a6814",
+    "storage_bucket": "travel-and-tourism-a6814.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751552288129:android:acc42bc44b363d58780480",
+        "android_client_info": {
+          "package_name": "com.example.travelling_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751552288129-8ihbp9dtsgfbscc8qjv5gk3ead45dc0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkED7_xawhrc4trQ_VDOa6CFCm7vqtQs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751552288129-8ihbp9dtsgfbscc8qjv5gk3ead45dc0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
