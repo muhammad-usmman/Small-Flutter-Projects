@@ -1,3 +1,5 @@
+import 'package:fee_management_system/Teacher/data_display/classes.dart';
+import 'package:fee_management_system/Teacher/data_display/fee_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:fee_management_system/contsnts/constant.dart';
 
@@ -70,10 +72,11 @@ class _t_landingpageState extends State<t_landingpage> {
                         // color: Colors.redAccent,
                       ),
                     ),
-                    // onTap: (){
-                    //   Navigator.push(context,
-                    //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                    //          }
+                    onTap: (){
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context)=>class_detail())
+                      );
+                             }
                   ),
                    const Text('Classes',),
                   sh20,
@@ -94,10 +97,11 @@ class _t_landingpageState extends State<t_landingpage> {
                         color: Colors.redAccent,
                       ),
                     ),
-                    // onTap: (){
-                    //   Navigator.push(context,
-                    //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                    //          }
+                    onTap: (){
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context)=>fee_detail())
+                      );
+                             }
                   ),
                 ],
               ),

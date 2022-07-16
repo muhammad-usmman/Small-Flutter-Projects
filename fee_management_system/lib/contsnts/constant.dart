@@ -24,3 +24,22 @@ const sizedb20=SizedBox(
 const sizedb10=SizedBox(
   height: 20.0,
 );
+
+const kmd=TextStyle(
+    fontSize: 20.0,
+    fontWeight: FontWeight.normal,
+    fontFamily:'Poppins',
+    color: Colors.black
+);
+const ksm=TextStyle(
+    fontSize: 15.0,
+    fontWeight: FontWeight.normal,
+    fontFamily:'Poppins',
+    color: Colors.black
+);
+const ksg=TextStyle(
+    fontSize: 25.0,
+    fontWeight: FontWeight.normal,
+    fontFamily:'Poppins',
+    color: Colors.black
+);
