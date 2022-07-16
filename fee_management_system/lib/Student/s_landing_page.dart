@@ -1,3 +1,5 @@
+import 'package:fee_management_system/Student/data_display/anualfee_detail.dart';
+import 'package:fee_management_system/Student/data_display/teachers_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:fee_management_system/contsnts/constant.dart';
 
@@ -67,10 +69,11 @@ class _s_landingpageState extends State<s_landingpage> {
                       // color: Colors.redAccent,
                     ),
                   ),
-                  // onTap: (){
-                  //   Navigator.push(context,
-                  //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                  //          }
+                  onTap: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>teachers_detail())
+                    );
+                           }
                 ),
                 // Text('Teacher Info'),
                 sh20,
@@ -91,10 +94,11 @@ class _s_landingpageState extends State<s_landingpage> {
                       // color: Colors.redAccent,
                     ),
                   ),
-                  // onTap: (){
-                  //   Navigator.push(context,
-                  //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                  //          }
+                  onTap: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>annual_fee_detail())
+                    );
+                           }
                 ),
               ],
             ),

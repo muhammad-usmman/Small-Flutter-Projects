@@ -4,8 +4,8 @@ import 'package:fee_management_system/widgets/packageswidget.dart';
 
 import 'package:fee_management_system/contsnts/constant.dart';
 
-class class_detail extends StatelessWidget {
-  const class_detail({Key? key}) : super(key: key);
+class teachers_detail extends StatelessWidget {
+  const teachers_detail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,8 @@ class class_detail extends StatelessWidget {
                 sizedb20,
                 packagecontainer(
                   package: 'Class 1',
-                  car: 'Subject: Digital Logic Design',
-                  duration: 'Professor: Mr Abdullah Wali',
+                    car: 'Subject: DLD',
+                  duration: 'Professor: Mr Ali',
                   price: 'Fee: 1500',
                   // image: Image.asset('assets/images/vitz.png'),
                 ),
@@ -33,8 +33,8 @@ class class_detail extends StatelessWidget {
 
                 packagecontainer(
                   package: 'Class 2',
-                  car: 'Subject: Information and Communication Technologies',
-                  duration: 'Professor: Qazair Jawed',
+                  car: 'Subject:ICT',
+                  duration: 'Professor: Mr Qazair Jawed',
                   price: 'Fee: 1500',
                   // image: Image.asset('assets/images/vitz.png'),
                 ),
@@ -43,23 +43,23 @@ class class_detail extends StatelessWidget {
 
                 packagecontainer(
                   package: 'Class 3',
-                  car: 'Subject: Mobile App Development',
-                  duration: 'Professor',
+                  car: 'Subject: MAD',
+                  duration: 'Professor: Mr Abdullah Walli',
                   price: 'Fee: 1500',
                   // image: Image.asset('assets/images/vitz.png'),
                 ),
                 sizedb20,
 
 
-                 packagecontainer(
-                  package: 'Class 4',
-                  car: 'Subject: Web',
-                  duration: 'Duration: 02::30 to 03::00',
-                  price: 'Students: 11',
-                  // image: Image.asset('assets/images/vitz.png'),
-                ),
-
-                sizedb20,
+                //  packagecontainer(
+                //   package: 'Class 4',
+                //   car: 'Subject: Web',
+                //   duration: 'Duration: 02::30 to 03::00',
+                //   price: 'Students: 11',
+                //   // image: Image.asset('assets/images/vitz.png'),
+                // ),
+                //
+                // sizedb20,
 
               ],
             ),
