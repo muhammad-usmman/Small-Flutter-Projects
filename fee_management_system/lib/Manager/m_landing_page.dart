@@ -1,3 +1,5 @@
+import 'package:fee_management_system/Manager/Data_Manipulation/calsses_info.dart';
+import 'package:fee_management_system/Manager/Data_Manipulation/student_info.dart';
 import 'package:flutter/material.dart';
 import 'package:fee_management_system/contsnts/constant.dart';
 
@@ -103,10 +105,11 @@ class _m_landingpageState extends State<m_landingpage> {
                                 color: Colors.redAccent,
                               ),
                             ),
-                            // onTap: (){
-                            //   Navigator.push(context,
-                            //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                            //          }
+                            onTap: (){
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context)=>register_student())
+                              );
+                                     }
                           ),
                      const Text('Edit Student Info',),
                         ],
@@ -136,10 +139,10 @@ class _m_landingpageState extends State<m_landingpage> {
                                 // color: Colors.redAccent,
                               ),
                             ),
-                            // onTap: (){
-                            //   Navigator.push(context,
-                            //       MaterialPageRoute(builder: (context)=>cruise_Book())
-                            //          }
+                            onTap: (){
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context)=>class_info()));
+                                     }
                           ),
                      const Text('Edit Classes Info',),
                         ],

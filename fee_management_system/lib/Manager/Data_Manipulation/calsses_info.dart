@@ -3,13 +3,13 @@ import 'package:fee_management_system/contsnts/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 
-class Camp_Book extends StatefulWidget {
+class class_info extends StatefulWidget {
 
   @override
-  State<Camp_Book> createState() => _Camp_BookState();
+  State<class_info> createState() => _class_infoState();
 }
 
-class _Camp_BookState extends State<Camp_Book> {
+class _class_infoState extends State<class_info> {
 
   final formkey = GlobalKey<FormState>();
   TextEditingController namecontroller = TextEditingController();
@@ -35,8 +35,8 @@ class _Camp_BookState extends State<Camp_Book> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        backgroundColor: Colors.lightGreenAccent,
-        title: const Text("Book Your Camping"),
+        backgroundColor: Colors.lightBlueAccent,
+        title: const Text("Classes Info"),
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -58,7 +58,7 @@ class _Camp_BookState extends State<Camp_Book> {
                   decoration: InputDecoration(
                     // icon: Icon(Icons.person),
                     border: UnderlineInputBorder(),
-                    labelText: 'Name',
+                    labelText: 'Title of Class',
                   ),
                   controller: namecontroller,
                   keyboardType: TextInputType.name,
@@ -81,8 +81,8 @@ class _Camp_BookState extends State<Camp_Book> {
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(
                     ),
-                    labelText: 'CNIC',
-                    helperText: 'XXXXX-XXXXXXX-X',
+                    labelText: 'Teacher NAme',
+                    // helperText: 'XXXXX-XXXXXXX-X',
                   ),
                   controller: cniccontrller,
                   keyboardType: TextInputType.number,
@@ -104,8 +104,8 @@ class _Camp_BookState extends State<Camp_Book> {
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(
                     ),
-                    labelText: 'E-Mail Id',
-                    helperText: 'example@domain.com',
+                    labelText: 'Fee',
+                    // helperText: 'example@domain.com',
                   ),
                   controller: mailcontroller,
                   keyboardType: TextInputType.emailAddress,
@@ -120,69 +120,69 @@ class _Camp_BookState extends State<Camp_Book> {
 
                 ),
                 sizedb10,
-
-                TextFormField(
-                  decoration: InputDecoration(
-                      border: UnderlineInputBorder(
-                      ),
-                      labelText: 'Phone No.',
-                      helperText: 'XXXX-XXXXXXX'
-                  ),
-                  controller: phonecontroller,
-                  keyboardType: TextInputType.number,
-                  validator: (value){
-                    if(value!.isEmpty){
-                      return 'Enter your phone number';
-                    }
-                    else if(!RegExp(r'^[0-9]{4}[-\s\./0-9]+$').hasMatch(value)){
-                      return 'Enter valid phone number';
-                    }
-                    else {
-                      return null;
-                    }
-                  },
-                ),
-                sizedb10,
-
-                TextFormField(
-                  decoration: InputDecoration(
-                    border: UnderlineInputBorder(
-                    ),
-                    labelText: 'Address',
-                  ),
-                  controller: addresscontroller,
-                  keyboardType: TextInputType.streetAddress,
-                  validator: (value){
-                    if(value!.isEmpty){
-                      return 'Enter your address';
-                    }
-                    else {
-                      return null;
-                    }
-                  },
-
-                ),
-                sizedb10,
-
-                TextFormField(
-                  decoration: InputDecoration(
-                    border: UnderlineInputBorder(
-                    ),
-                    labelText: 'Age',
-
-                  ),
-                  controller: agecontroller,
-                  keyboardType: TextInputType.number,
-                  validator: (value){
-                    if(value!.isEmpty){
-                      return 'Enter your Age';
-                    }
-                    else {
-                      return null;
-                    }
-                  },
-                ),
-                sizedb10,
+                //
+                // TextFormField(
+                //   decoration: InputDecoration(
+                //       border: UnderlineInputBorder(
+                //       ),
+                //       labelText: 'Phone No.',
+                //       helperText: 'XXXX-XXXXXXX'
+                //   ),
+                //   controller: phonecontroller,
+                //   keyboardType: TextInputType.number,
+                //   validator: (value){
+                //     if(value!.isEmpty){
+                //       return 'Enter your phone number';
+                //     }
+                //     else if(!RegExp(r'^[0-9]{4}[-\s\./0-9]+$').hasMatch(value)){
+                //       return 'Enter valid phone number';
+                //     }
+                //     else {
+                //       return null;
+                //     }
+                //   },
+                // ),
+                // sizedb10,
+                //
+                // TextFormField(
+                //   decoration: InputDecoration(
+                //     border: UnderlineInputBorder(
+                //     ),
+                //     labelText: 'Address',
+                //   ),
+                //   controller: addresscontroller,
+                //   keyboardType: TextInputType.streetAddress,
+                //   validator: (value){
+                //     if(value!.isEmpty){
+                //       return 'Enter your address';
+                //     }
+                //     else {
+                //       return null;
+                //     }
+                //   },
+                //
+                // ),
+                // sizedb10,
+                //
+                // TextFormField(
+                //   decoration: InputDecoration(
+                //     border: UnderlineInputBorder(
+                //     ),
+                //     labelText: 'Age',
+                //
+                //   ),
+                //   controller: agecontroller,
+                //   keyboardType: TextInputType.number,
+                //   validator: (value){
+                //     if(value!.isEmpty){
+                //       return 'Enter your Age';
+                //     }
+                //     else {
+                //       return null;
+                //     }
+                //   },
+                // ),
+                // sizedb10,
 
                 // TextFormField(
                 //   decoration: InputDecoration(
@@ -203,78 +203,78 @@ class _Camp_BookState extends State<Camp_Book> {
                 // ),
                 // sizedb20,
 
-                DropdownButtonHideUnderline(
-                  child: DropdownButton2(
-                    isExpanded: true,
-                    hint: Row(
-                      children: const [
-
-                        Expanded(
-                          child: Text(
-                            'Select Your Area ',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            ),
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                      ],
-                    ),
-                    items: items
-                        .map((item) => DropdownMenuItem<String>(
-                      value: item,
-                      child: Text(
-                        item,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ))
-                        .toList(),
-                    value: selectedValue,
-                    onChanged: (value) {
-                      setState(() {
-                        selectedValue = value as String;
-                      });
-                    },
-                    icon: const Icon(
-                      Icons.keyboard_arrow_down_sharp,
-                    ),
-                    iconSize: 14,
-                    iconEnabledColor: Colors.black,
-                    iconDisabledColor: Colors.white,
-                    buttonHeight: 50,
-                    buttonWidth: 160,
-                    buttonPadding: const EdgeInsets.only(left: 14, right: 14),
-                    buttonDecoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(
-                        color: Colors.black,
-                      ),
-                      color: Colors.white,
-                    ),
-                    buttonElevation: 2,
-                    itemHeight: 40,
-                    itemPadding: const EdgeInsets.only(left: 14, right: 14),
-                    dropdownMaxHeight: 200,
-                    dropdownWidth: 200,
-                    dropdownPadding: null,
-                    dropdownDecoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.white,
-                    ),
-                    dropdownElevation: 8,
-                    scrollbarRadius: const Radius.circular(40),
-                    scrollbarThickness: 6,
-                    scrollbarAlwaysShow: true,
-                    // offset: const Offset(-20, 0),
-                  ),
-                ),
+                // DropdownButtonHideUnderline(
+                //   child: DropdownButton2(
+                //     isExpanded: true,
+                //     hint: Row(
+                //       children: const [
+                //
+                //         Expanded(
+                //           child: Text(
+                //             'Select Your Area ',
+                //             style: TextStyle(
+                //               fontSize: 12,
+                //               fontWeight: FontWeight.bold,
+                //               color: Colors.black,
+                //             ),
+                //             overflow: TextOverflow.ellipsis,
+                //           ),
+                //         ),
+                //       ],
+                //     ),
+                //     items: items
+                //         .map((item) => DropdownMenuItem<String>(
+                //       value: item,
+                //       child: Text(
+                //         item,
+                //         style: const TextStyle(
+                //           fontSize: 12,
+                //           fontWeight: FontWeight.bold,
+                //           color: Colors.black,
+                //         ),
+                //         overflow: TextOverflow.ellipsis,
+                //       ),
+                //     ))
+                //         .toList(),
+                //     value: selectedValue,
+                //     onChanged: (value) {
+                //       setState(() {
+                //         selectedValue = value as String;
+                //       });
+                //     },
+                //     icon: const Icon(
+                //       Icons.keyboard_arrow_down_sharp,
+                //     ),
+                //     iconSize: 14,
+                //     iconEnabledColor: Colors.black,
+                //     iconDisabledColor: Colors.white,
+                //     buttonHeight: 50,
+                //     buttonWidth: 160,
+                //     buttonPadding: const EdgeInsets.only(left: 14, right: 14),
+                //     buttonDecoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(14),
+                //       border: Border.all(
+                //         color: Colors.black,
+                //       ),
+                //       color: Colors.white,
+                //     ),
+                //     buttonElevation: 2,
+                //     itemHeight: 40,
+                //     itemPadding: const EdgeInsets.only(left: 14, right: 14),
+                //     dropdownMaxHeight: 200,
+                //     dropdownWidth: 200,
+                //     dropdownPadding: null,
+                //     dropdownDecoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(14),
+                //       color: Colors.white,
+                //     ),
+                //     dropdownElevation: 8,
+                //     scrollbarRadius: const Radius.circular(40),
+                //     scrollbarThickness: 6,
+                //     scrollbarAlwaysShow: true,
+                //     // offset: const Offset(-20, 0),
+                //   ),
+                // ),
                 sizedb20,
                 sizedb20,
                 sizedb20,
@@ -309,8 +309,75 @@ class _Camp_BookState extends State<Camp_Book> {
                       // strtaddress.clear();
                       // destination.clear();
                     },
-                    child: Text('Book Camp',)
+                    child: Text('Add Class',)
                 ),
+                ElevatedButton(
+                    onPressed: () {
+
+                      // if(formkey.currentState!.validate()){
+                      //   // final snackBar = SnackBar(
+                      //   //   content: Text('Class booked successfully.'),
+                      //   //   behavior: SnackBarBehavior.floating,
+                      //   //   shape: RoundedRectangleBorder(
+                      //   //       borderRadius: BorderRadius.circular(10)
+                      //   //   ),
+                      //   // );
+                      //   // _scaffoldKey.currentState!.showSnackBar(snackBar);
+                      //   FirebaseFirestore.instance.collection("Camp_Booking").add({
+                      //     'Name':'${namecontroller.text}',
+                      //     'CNIC':'${cniccontrller.text}',
+                      //     'E-mail id':'${mailcontroller.text}',
+                      //     'Contact':'${phonecontroller.text}',
+                      //     'Address':'${addresscontroller.text}',
+                      //     'Age':'${agecontroller.text}'
+                      //   }
+                      //   );
+                      //   Navigator.pop(context);
+                      // }
+                      // _namecontroller.clear();
+                      // cnic.clear();
+                      // mail.clear();
+                      // phone.clear();
+                      // address.clear();
+                      // strtaddress.clear();
+                      // destination.clear();
+                    },
+                    child: Text('Delete Class',)
+                ),
+                ElevatedButton(
+                    onPressed: () {
+
+                      // if(formkey.currentState!.validate()){
+                      //   // final snackBar = SnackBar(
+                      //   //   content: Text('Class booked successfully.'),
+                      //   //   behavior: SnackBarBehavior.floating,
+                      //   //   shape: RoundedRectangleBorder(
+                      //   //       borderRadius: BorderRadius.circular(10)
+                      //   //   ),
+                      //   // );
+                      //   // _scaffoldKey.currentState!.showSnackBar(snackBar);
+                      //   FirebaseFirestore.instance.collection("Camp_Booking").add({
+                      //     'Name':'${namecontroller.text}',
+                      //     'CNIC':'${cniccontrller.text}',
+                      //     'E-mail id':'${mailcontroller.text}',
+                      //     'Contact':'${phonecontroller.text}',
+                      //     'Address':'${addresscontroller.text}',
+                      //     'Age':'${agecontroller.text}'
+                      //   }
+                      //   );
+                      //   Navigator.pop(context);
+                      // }
+                      // _namecontroller.clear();
+                      // cnic.clear();
+                      // mail.clear();
+                      // phone.clear();
+                      // address.clear();
+                      // strtaddress.clear();
+                      // destination.clear();
+                    },
+                    child: Text('Update Class',)
+                ),
+
 
                 sizedb20,
 

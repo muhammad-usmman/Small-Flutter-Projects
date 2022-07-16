@@ -3,13 +3,13 @@ import 'package:fee_management_system/contsnts/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 
-class Camp_Book extends StatefulWidget {
+class register_student extends StatefulWidget {
 
   @override
-  State<Camp_Book> createState() => _Camp_BookState();
+  State<register_student> createState() => _register_studentState();
 }
 
-class _Camp_BookState extends State<Camp_Book> {
+class _register_studentState extends State<register_student> {
 
   final formkey = GlobalKey<FormState>();
   TextEditingController namecontroller = TextEditingController();
@@ -21,11 +21,11 @@ class _Camp_BookState extends State<Camp_Book> {
   // TextEditingController destination = TextEditingController();
 
   final List<String> items = [
-    "Fairy Medows      Rs  4000/day ",
-    'K2 Base Camp    Rs  12000/day ',
-    'Skardu   Rs 10000/day',
-    'Shogran    Rs  3000/day',
-    'Pir Chinasi       Rs 7000/day',
+    "DLD ",
+    'ICT ',
+    'MAD',
+    'WEB',
+
   ];
   String? selectedValue;
   @override
@@ -35,8 +35,8 @@ class _Camp_BookState extends State<Camp_Book> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        backgroundColor: Colors.lightGreenAccent,
-        title: const Text("Book Your Camping"),
+        backgroundColor: Colors.lightBlueAccent,
+        title: const Text("Student info"),
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -64,7 +64,7 @@ class _Camp_BookState extends State<Camp_Book> {
                   keyboardType: TextInputType.name,
                   validator: (value){
                     if(value!.isEmpty){
-                      return 'Enter your name';
+                      return 'Enter  name';
                     }
                     else if(!RegExp(r'^[a-z A-Z]+$').hasMatch(value)){
                       return 'Enter valid name';
@@ -81,14 +81,14 @@ class _Camp_BookState extends State<Camp_Book> {
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(
                     ),
-                    labelText: 'CNIC',
-                    helperText: 'XXXXX-XXXXXXX-X',
+                    labelText: 'FATHER NAME',
+                    // helperText: 'XXXXX-XXXXXXX-X',
                   ),
                   controller: cniccontrller,
                   keyboardType: TextInputType.number,
                   validator: (value){
                     if(value!.isEmpty){
-                      return 'Enter your CNIC';
+                      return 'Enter your father name';
                     }
                     else if(!RegExp(r'^[0-9]{5}[-][0-9]{7}[-][0-9]+$').hasMatch(value)){
                       return 'Enter valid CNIC';
@@ -211,7 +211,7 @@ class _Camp_BookState extends State<Camp_Book> {
 
                         Expanded(
                           child: Text(
-                            'Select Your Area ',
+                            'ENTER SUBJECT ',
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
@@ -309,7 +309,7 @@ class _Camp_BookState extends State<Camp_Book> {
                       // strtaddress.clear();
                       // destination.clear();
                     },
-                    child: Text('Book Camp',)
+                    child: Text('REGISTER STUDENT',)
                 ),
 
                 sizedb20,

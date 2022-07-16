@@ -16,6 +16,7 @@ class _Home_PageState extends State<Home_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text("Fee Management App"),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SingleChildScrollView(
@@ -23,7 +24,7 @@ class _Home_PageState extends State<Home_Page> {
         child: Container(
 
 
-          height: 1000.0,
+          height: 790.0,
           width: 500.0,
 
           child:Column(
@@ -52,8 +53,8 @@ class _Home_PageState extends State<Home_Page> {
                     );
                   }
               ),
-              sh20,
-            kpd20,
+              // sh20,
+            // kpd20,
               InkWell(
                 child:
                 Container(

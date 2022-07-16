@@ -115,7 +115,7 @@ class _S_SignInPageState extends State<S_SignInPage> {
             onTap: () => Navigator.push(
                 context, MaterialPageRoute(builder: (context) => S_SignUpPage())),
             child: Text(
-              'Register',
+              '',
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
